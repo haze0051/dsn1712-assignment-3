@@ -60,6 +60,58 @@ header .wrapper{
     text-shadow: 5px 5px 5px rgb(0 0 0 / 50%);
 }
 
-#about-me{
+#about-me .wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#about-me p{
+    grid-column: 1 / -2;
     
 }
+
+#about-me img{
+    grid-column:3 / 4;
+}
+
+#services{
+    background-color: #fafafa;
+    padding: 2em;
+}
+
+#services h2{
+    max-width: 50%;
+    font-size: 2em;
+    align-content: center;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#services div div{
+display: grid; 
+grid-template-columns: repeat(3, 1fr); 
+gap: 20px
+}
+
+#services article{
+    background-color: white; 
+    padding: 1em; 
+    display: flex;
+     flex-direction: column; 
+     align-items: flex-start;
+}
+
+#services h3{
+   font-size: 1.5em; 
+}
+
+#services a{
+    margin-top: auto;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 1em;
+    border-radius: 3px;
+}
+
